@@ -23,26 +23,26 @@
         <div class="glitch__img"></div>
     </div>
     <div class="box">
-        <ul id="menu">
-            <li data-menuanchor="1page" class="active"><a href="#1page">Home</a></li>
-            <li data-menuanchor="2page"><a href="#2page">About</a></li>
-            <li data-menuanchor="3page"><a href="#3page">Skill</a></li>
-            <li data-menuanchor="4page"><a href="#4page">Work</a></li>
-            <li data-menuanchor="5page"><a href="#5page">Contact</a></li>
-            <li data-menuanchor="6page"><a href="#6page">Link</a></li>
-        </ul>
+        <div class="menubox">
+            <ul id="menu">
+                <li data-menuanchor="1page" class="active"><a href="#1page">Home</a></li>
+                <li data-menuanchor="2page"><a href="#2page">About</a></li>
+                <li data-menuanchor="3page"><a href="#3page">Skill</a></li>
+                <li data-menuanchor="4page"><a href="#4page">Work</a></li>
+                <li data-menuanchor="5page"><a href="#5page">Contact</a></li>
+                <li data-menuanchor="6page"><a href="#6page">Link</a></li>
+            </ul>
+        </div>
         <div id="fullpage">
             <div class="section">
-                <header>
-                    
-                    <div id="home_title">
-                        <img class="logo" src="../resource/img/アセット 10.svg">
-                        <br>
+                <div class="home_title inner">
+                    <img class="logo" src="../resource/img/アセット 10.svg">
+                    <h1 class="logo">
                         RUI NOGUCHI
                         <br>
                         CREATIVE STUDIO
-                    </div>
-                </header>
+                    </p>
+                </div>
             </div>
             <div class="section">
                 <div class="about inner">
@@ -50,7 +50,7 @@
                         About
                     </h2>
                     <p>
-                        Noguchi "Orve" Rui(本名：野口 瑠偉)<br>
+                        Rui "Orve" Noguchi(本名：野口 瑠偉)<br>
                         1992年 東京生まれ。<br>
                         北海道、都内、静岡県と転々とし、現在埼玉県在住。<br>
                         大学へは行かず、アルバイト生活を送っていたが、<br>
@@ -122,12 +122,86 @@
                 <div class="slide"> Slide 3 </div>
                 <div class="slide"> Slide 4 </div> -->
             </div>
-            <div class="section">Work</div>
+            <div class="section">
+                <div class="work inner">
+                    <h2>
+                        Work
+                    </h2>
+                    <div class="tabs">
+                        <input id="all" type="radio" name="tab_item" checked>
+                        <label class="tab_item" for="all">All</label>
+
+                        <input id="programming" type="radio" name="tab_item">
+                        <label class="tab_item" for="programming">Programming</label>
+
+                        <input id="music" type="radio" name="tab_item">
+                        <label class="tab_item" for="music">Music</label>
+                        
+                        <input id="photograph" type="radio" name="tab_item">
+                        <label class="tab_item" for="photograph">Photograph</label>
+                        
+                        <input id="movie" type="radio" name="tab_item">
+                        <label class="tab_item" for="movie">Movie</label>
+
+                        <input id="stream" type="radio" name="tab_item">
+                        <label class="tab_item" for="stream">Stream</label>
+                        
+                        <div class="tab_content" id="all_content">
+                          <div class="tab_content_description">
+                            <p class="c-txtsp">総合の内容がここに入ります</p>
+                          </div>
+                        </div>
+                        
+                        <div class="tab_content" id="programming_content">
+                          <div class="tab_content_description">
+                            <p class="c-txtsp">
+                                プログラミングの内容がここに入ります
+                            </p>
+                          </div>
+                        </div>
+                        
+                        <div class="tab_content" id="music_content">
+                          <div class="tab_content_description">
+                            <p class="c-txtsp">
+                                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/904050118&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/0rv3" title="Orve." target="_blank" style="color: #cccccc; text-decoration: none;">Orve.</a> · <a href="https://soundcloud.com/0rv3/red-hideout" title="Red Hideout" target="_blank" style="color: #cccccc; text-decoration: none;">Red Hideout</a></div>
+                            </p>
+                          </div>
+                        </div>
+                        
+                        <div class="tab_content" id="photograph_content">
+                          <div class="tab_content_description">
+                            <p class="c-txtsp">
+                                写真の内容がここに入ります
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="tab_content" id="movie_content">
+                          <div class="tab_content_description">
+                            <p class="c-txtsp">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/gDPmikeHLu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </p>
+                          </div>
+                        </div>
+                        
+                        <div class="tab_content" id="stream_content">
+                          <div class="tab_content_description">
+                            <p class="c-txtsp">
+                                <iframe src="https://player.twitch.tv/?channel=orve_fps&parent=www.example.com" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+                            </p>
+                          </div>
+                        </div>
+
+
+
+                      </div>
+                </div>
+            </div>
             <div class="section">
                 <div class="contact inner">
-                    <h3>
+                    <h2>
                         Contact
-                    </h3>
+                    </h2>
                     <div class="contact_icon">
                         <a href="https://twitter.com/OrveJp"><i class="fab fa-twitter"></i></a>
                         <a href="https://www.twitch.tv/orve_fps"><i class="fab fa-twitch"></i></a>
@@ -138,9 +212,9 @@
             </div>
             <div class="section">
                 <div class="link inner">
-                    <h3>
+                    <h2>
                         Link
-                    </h3>
+                    </h2>
 
                 </div>
             </div>

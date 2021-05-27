@@ -349,35 +349,41 @@
 	font-size: 200%;
 }
 
+.menubox {
+    width: 100%;
+    height: ;
+}
+
 ul#menu{
     width: auto;
     margin: 0 0 0 auto;
+    display: inline;
+    text-align: right;
 }
 
 #menu li {
+    text-align: right;
     display:inline-block;
     margin: 10px;
     /* float: right; */
-    color: #000;
-    background:#fff;
-    background: rgba(255,255,255, 0.5);
+    color: #fff;
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
 #menu li.active{
     background:#666;
     background: rgba(0,0,0, 0.5);
-    color: #fff;
 }
 #menu li a{
     text-decoration:none;
-    color: #000;
+    color: #fff;
 }
 #menu li.active a:hover{
     color: #000;
 }
 #menu li:hover{
     background: rgba(255,255,255, 0.8);
+    color: #000;
 }
 #menu li a,
 #menu li.active a{
@@ -404,6 +410,11 @@ body {
     color: #fff;
 }
 
+.logo {
+    float: left;
+
+}
+
 p{
     font-size: 1.4rem;
     font-family: 'Noto Serif JP', serif;
@@ -413,8 +424,12 @@ li {
     font-size: 1.4rem;
 }
 
-h1,h2,h3,h4,li {
+h1,h2,h3,h4,li,label {
     font-family: 'IBM Plex Serif', serif;
+}
+
+h1 {
+    font-size: 5.0rem;
 }
 h2 {
     font-size: 2.4rem;
@@ -446,3 +461,63 @@ h4 {
 img.logo{
     width: 15%;
 }
+
+/*タブ切り替え全体のスタイル*/
+.tabs {
+    margin-top: 50px;
+    padding-bottom: 40px;
+    background-color: rgba(255, 255, 255, 0);
+    width: 700px;
+    margin: 0 auto;
+}
+
+  
+  /*タブのスタイル*/
+  .tab_item {
+    width: calc(100%/3);
+    height: 50px;
+    border-bottom: 3px solid #3ecf6f7c;
+    background-color: #d9d9d900;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+  }
+  .tab_item:hover {
+    opacity: 0.75;
+  }
+  
+  /*ラジオボタンを全て消す*/
+  input[name="tab_item"] {
+    display: none;
+  }
+  
+  /*タブ切り替えの中身のスタイル*/
+  .tab_content {
+    display: none;
+    padding: 40px 40px 0;
+    clear: both;
+    overflow: hidden;
+  }
+  
+  
+  /*選択されているタブのコンテンツのみを表示*/
+  #all:checked ~ #all_content,
+  #programming:checked ~ #programming_content,
+  #music:checked ~ #music_content,
+  #photograph:checked ~ #photograph_content,
+  #movie:checked ~ #movie_content,
+  #stream:checked ~ #stream_content {
+    display: block;
+  }
+  
+  /*選択されているタブのスタイルを変える*/
+  .tabs input:checked + .tab_item {
+    background-color: #7c7c7c;
+    color: #fff;
+  }
