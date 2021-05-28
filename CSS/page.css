@@ -420,7 +420,7 @@ p{
     font-family: 'Noto Serif JP', serif;
 }
 
-a {
+a.link {
     text-decoration:underline ;
 }
 
@@ -472,7 +472,6 @@ img.logo{
 
 .tab_inner_image {
     justify-content: space-between;
-    width: 200px;
     height: 100px;
     margin-bottom: 5px;
 }

@@ -13,6 +13,7 @@
     <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@600;700&family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
 </head>
 <body class="bg loading">
     <div class="glitch">
@@ -124,17 +125,15 @@
                         Work
                     </h2>
                     <div class="tabs">
-                        <input id="all" type="radio" name="tab_item" checked>
-                        <label class="tab_item" for="all">All</label>
+
+                        <input id="photograph" type="radio" name="tab_item" checked>
+                        <label class="tab_item" for="photograph">Photograph</label>
 
                         <input id="programming" type="radio" name="tab_item">
                         <label class="tab_item" for="programming">Programming</label>
 
                         <input id="music" type="radio" name="tab_item">
                         <label class="tab_item" for="music">Music</label>
-                        
-                        <input id="photograph" type="radio" name="tab_item">
-                        <label class="tab_item" for="photograph">Photograph</label>
                         
                         <input id="movie" type="radio" name="tab_item">
                         <label class="tab_item" for="movie">Movie</label>
@@ -151,7 +150,7 @@
                         <div class="tab_content" id="programming_content">
                           <div class="tab_content_description">
                             <p class="c-txtsp">
-                                プログラミングの内容がここに入ります
+                                Comming Soon...
                             </p>
                           </div>
                         </div>
@@ -167,14 +166,24 @@
                         <div class="tab_content" id="photograph_content">
                           <div class="tab_content_description">
                             <p class="c-txtsp">
-
-                                <img class="tab_inner_image" src="../resource/img/Image.jpeg">
-                                <img class="tab_inner_image" src="../resource/img/Image.jpeg">
-                                <img class="tab_inner_image" src="../resource/img/Image.jpeg">
-
-                                <img class="tab_inner_image" src="../resource/img/Image.jpeg">
-                                <img class="tab_inner_image" src="../resource/img/Image.jpeg">
-                                <img class="tab_inner_image" src="../resource/img/Image.jpeg">
+                                <a href="../resource/img/Image.jpeg" data-lightbox="group">
+                                    <img class="tab_inner_image" src="../resource/img/Image.jpeg" width="200">
+                                </a>
+                                <a href="../resource/img/04C82F8D-D24B-48A7-B9FB-4AD15A0CFF37.jpg" data-lightbox="group">
+                                    <img class="tab_inner_image" src="../resource/img/04C82F8D-D24B-48A7-B9FB-4AD15A0CFF37.jpg" width="200">
+                                </a>
+                                <a href="../resource/img/-241242553100539707_IMG_0401.jpg" data-lightbox="group">
+                                    <img class="tab_inner_image" src="../resource/img/-241242553100539707_IMG_0401.jpg" width="200">
+                                </a>
+                                <a href="../resource/img/2335395885495626041_IMG_0509.jpg" data-lightbox="group">
+                                    <img class="tab_inner_image" src="../resource/img/2335395885495626041_IMG_0509.jpg" width="200">
+                                </a>
+                                <a href="../resource/img/-1210773617585056244_IMG_0613.jpg" data-lightbox="group">
+                                    <img class="tab_inner_image" src="../resource/img/-1210773617585056244_IMG_0613.jpg" width="200">
+                                </a>
+                                <a href="../resource/img/-3918018344758493543_IMG_0355.jpg" data-lightbox="group">
+                                    <img class="tab_inner_image" src="../resource/img/-3918018344758493543_IMG_0355.jpg" width="200">
+                                </a>
                             </p>
                           </div>
                         </div>
@@ -216,14 +225,14 @@
             <div class="section">
                 <div class="link inner">
                     <h2>
-                        Link(Special thanks)
+                        Link(My friend's site)
                     </h2>
-                    <p>私の好みの画風でイラストを描かれているミミナリビビノ様！</p>
+                    <p>ミミナリビビノ様</p>
                     <a href="https://2lovely2die.theshop.jp/">
                         <img src="../resource/img/98d64af618c141b0e5c43d45dae8c7d9.jpg" alt="">
                     </a>
-                    <p>尊敬する先輩エンジニアの石黒雄介様！</p>
-                    <a href="https://yusukeishiguro.com/">Yusuke Ishiguro</a>
+                    <p>石黒雄介様</p>
+                    <a class="link" href="https://yusukeishiguro.com/">Yusuke Ishiguro</a>
                 </div>
             </div>
         </div>
@@ -236,5 +245,6 @@
     <script src="https://tympanus.net/Tutorials/CSSGlitchEffect/js/imagesloaded.pkgd.min.js"></script>
     <script type="text/javascript" src="../JavaScript/glitch.js"></script>
     <script src="https://kit.fontawesome.com/35b50947e5.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
 </body>
 </html>
