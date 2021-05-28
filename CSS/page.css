@@ -483,7 +483,7 @@ img.logo{
     margin-top: 50px;
     padding-bottom: 40px;
     background-color: rgba(255, 255, 255, 0);
-    width: 700px;
+    width: 1080px;
     margin: 0 auto;
 }
 
@@ -516,14 +516,12 @@ img.logo{
   /*タブ切り替えの中身のスタイル*/
   .tab_content {
     display: none;
-    padding: 40px 40px 0;
     clear: both;
     overflow: hidden;
   }
   
   
   /*選択されているタブのコンテンツのみを表示*/
-  #all:checked ~ #all_content,
   #programming:checked ~ #programming_content,
   #music:checked ~ #music_content,
   #photograph:checked ~ #photograph_content,
