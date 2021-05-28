@@ -351,7 +351,6 @@
 
 .menubox {
     width: 100%;
-    height: ;
 }
 
 ul#menu{
@@ -365,7 +364,6 @@ ul#menu{
     text-align: right;
     display:inline-block;
     margin: 10px;
-    /* float: right; */
     color: #fff;
     -webkit-border-radius: 10px;
     border-radius: 10px;
@@ -420,6 +418,10 @@ p{
     font-family: 'Noto Serif JP', serif;
 }
 
+.contact_icon {
+    
+}
+
 a.link {
     text-decoration:underline ;
 }
@@ -465,6 +467,13 @@ h4 {
 
 .contact_icon {
     font-size: 200%;
+}
+
+.contact_icon a{
+    width: calc(1080px / 3);
+    border: 1px solid #ddd;
+    padding: 20px 0;
+    text-align: center;
 }
 
 img.logo{
